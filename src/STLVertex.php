@@ -120,7 +120,7 @@ class STLVertex
     public function toString() : string
     {
         $coordinates = $this->getCoordinatesArray();
-        $string = "outerloop\n";
+        $string = "outer loop\n";
         foreach ($coordinates as $coordinate) {
             $string .= "    vertex " . implode(" ", $coordinate) . "\n";
         }
