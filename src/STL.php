@@ -199,7 +199,7 @@ class STL
             $string .= $this->getFacetNormal($i)->toString() . "\n";
         }
 
-        $string .= "endsolid";
+        $string .= "endsolid" . $this->getSolidName() . "\n";
 
         return $string;
     }
